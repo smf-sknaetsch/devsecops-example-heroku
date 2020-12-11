@@ -44,3 +44,6 @@ workflows:
   workflow:
     jobs:
       - deploy
+      - dast:
+          requires:
+            - deploy      
